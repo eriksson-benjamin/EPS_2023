@@ -1,0 +1,118 @@
+%% File 'sample.tex'
+%% 
+%% Copyright (C) 2003 by Maarten Sneep <sneep@nat.vu.nl>
+%% Modified 2004 by B.Ph. van Milligen <boudewijn.vanmilligen@ciemat.es>
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.2 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%    http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of LaTeX version
+%% 1999/12/01 or later.
+%% 
+\documentclass{epsconf}
+\usepackage{graphicx}
+%\usepackage{epsfig} % use this package to include EPS format figures
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{tabularx,booktabs}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+
+\def\TT{$\text{T} + \text{T} \rightarrow {^4\text{He}} + 2\text{n}$}
+\def\TTc{T(T,2n)$^4$He}
+\def\TTres{$\text{T} + \text{T} \rightarrow {^5\text{He}} + \text{n}$}
+\def\TTresc{T(T,n)$^5$He}
+\def\DT{$\text{D} + \text{T} \rightarrow {^4\text{He}} + \text{n}$}
+\def\DTc{D(T,n)$^4$He}
+\def\FuelRatio{$n_\text{T}/\left(n_\text{T} + n_\text{D}\right)$}
+
+
+\title{Observations of the T(T,n)$^5$He resonance in NBI heated fusion plasmas}
+\author{B. Eriksson\textsuperscript{1}, G. Ericsson\textsuperscript{1}, J. Eriksson\textsuperscript{1}, A. Hjalmarsson\textsuperscript{1}, S. Conroy\textsuperscript{1},\\C. Brune\textsuperscript{2}, M. G. Johnson\textsuperscript{3}, JET contributors\textsuperscript{4}}
+
+\institute{\textsuperscript{1}Department of Physics and Astronomy, Uppsala University, Uppsala, Sweden\\
+\textsuperscript{2}Department of Physics and Astronomy, Ohio University, Athens, Ohio 45701, USA\\
+%\textsuperscript{3}Plasma Science and Fusion Center, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\\
+\textsuperscript{3}Massachusetts Institute of Technology, Cambridge, MA 02139, United States\\
+\textsuperscript{4}See the author list of ‘Overview of JET results for optimising ITER operation’ by J. Mailloux et al. 2022 Nucl. Fusion 62 042026
+}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+The Joint European Torus (JET) has recently performed experiments with fusion plasmas consisting of a majority of tritium (T) with trace amounts of deuterium (D), heated using neutral beam injection (NBI) with T ions. The dominating reactions for fusion plasmas with high T/D fuel density ratios are the \DT \ and \TT \ reactions. Due to the 3-body end state of the TT reaction, neutrons with a broad continuum of energies are produced. The TT reaction sometimes goes via an intermediate resonant state, \TTres, which promptly decays via $^5\text{He} \rightarrow {^4\text{He}} + \text{n}$. Using the neutron time-of-flight spectrometer TOFOR at JET, we present experimental neutron spectra of the TT reaction, and, applying R-matrix formalism to model the neutron energy spectrum, show that our results are consistent with measurements at the National Ignition Facility (NIF).
+\end{abstract}
+
+\section{Introduction}
+The Joint European Torus (JET) has recently performed experiments employing fusion plasmas with high fuel ion density ratios, \FuelRatio \ > 0.95. Fuel conditions with such high tritium (T) to deuterium (D) content offer the opportunity to study the \mbox{T + T $\rightarrow$ $^4$He + 2n} reaction. Given the three-body end state, the reaction produces a wide distribution of $\alpha$-particle and neutron energies. Further, a reaction branch has been observed to go via an intermediate two-body state involving a neutron and a $^5$He nucleus, which decays to form the final three-body state. Measurements of the neutron emission energy spectrum have been conducted at JET using the TOFOR\cite{johnson20082, eriksson2023tofu} time-of-flight (TOF) neutron spectrometer at an average center-of-momentum (CM) energy $E_\text{CM} = XX$ keV. We present here experimental evidence which is consistent with the various neutron emission energy distributions associated with the \mbox{T + T} reaction branches modeled using an R-matrix framework developed in \cite{brune2015r}.
+
+\section{Theoretical background}
+The R-matrix model\cite{brune2015r} used to describe the neutron emission components treats the \mbox{T + T} reaction for two different cases: the first case is referred to as dineutron emission (nn) in which the reaction occurs through $\alpha$-particle emission and two neutrons. The three-body end state of the reaction yields a broad spectrum of neutron energies, shown as the green dash-dotted line in panel (a) of figure \ref{fig:energy_spectra}. The second case, referred to as n$\alpha$ emission, makes use of sequential two-body decays in which an intermediate state of $^5$He + n is followed by $^5$He $\rightarrow$ $\alpha$ + n. The model assumes an initial spin and parity state of $J^P = 0^+$, and considers transitions with orbital angular momenta $l = \left\{0, 1 \right\}$. This yields three partial waves $1/2^+$, $1/2^-$, and $3/2^-$ to consider. The $3/2^-$ and $1/2^-$ partial waves, the neutron emission spectra of which are shown in panel (a) of figure \ref{fig:energy_spectra} as the blue narrow dashed and the red densely dotted lines, are resonant states corresponding to the ground state and first excited state of $^5$He. These are expected to contribute significantly to the neutron emission spectrum. The $1/2^+$ partial wave is non-resonant and contributes less to the neutron emission spectrum, as can be seen by the cyan loosely dotted line in panel (b). The amplitudes of the partial waves are determined using two levels of feeding factors ($A_1$, $A_2$) as indicated in table \ref{tab:feed_factors}. Finally, the component due to the interference between partial wave combinations is shown as the black dash-dotted line in panel (b). The details of the R-matrix model are extensively described in \cite{brune2015r}.
+\begin{figure}[ht!]%
+    \centering
+    \subfloat{{\includegraphics[width=0.45\textwidth]{figures/fit_16_A.pdf} }}%
+    \qquad
+    \subfloat{{\includegraphics[width=0.45\textwidth]{figures/fit_16_B.pdf} }}%
+    \caption{T + T neutron emission energy spectrum modeled using R-matrix theory (black line), including the contributions from the partial waves as well as the net interference between the partial waves. Feeding factor values here correspond to fit 16 in table \ref{tab:feed_factors}.}%
+    \label{fig:energy_spectra}%
+\end{figure}
+
+\section{Methods}
+Measurements have been performed, using the neutron TOF spectrometer TOFOR\cite{johnson20082, eriksson2023tofu}, of 91 experimental discharges at JET with high fuel ion ratio plasmas, \FuelRatio \ > 0.95, heated with T neutral beam injection (NBI). The TOFOR data for the experimental discharges is summed to ensure that sufficient counts are gathered to discern the spectral features of interest in the neutron emission energy spectrum. The data is treated using the methods outlined in \cite{eriksson2023tofu}, and includes, e.g., employing kinematic cuts for background discrimination. Two models used in \cite{brune2015r} to fit data from the National Ignition Facility (NIF) are considered, denoted fit 09 and fit 16, with the feeding factor values shown in table \ref{tab:feed_factors}. For fit 09 the $1/2^+$ n$\alpha$ and dineutron emission components are disabled. For fit 16 all components are included, except the secondary feeding factor for the $1/2^+$ partial wave.
+\begin{table}
+    \centering
+    \caption{Primary ($A_1$) and secondary ($A_2$) feeding factor values for the partial waves in fit 09 and fit 16 from \cite{brune2015r}. For dineutron emission (nn), only the primary feeding factor was used.}
+    \label{tab:feed_factors}
+    \resizebox{0.8\columnwidth}{!}{%
+    \begin{tabularx}{0.85\textwidth}{c *{7}{Y}}
+        \toprule
+        \toprule
+        & \multicolumn{6}{c}{n$\alpha$} &  \multicolumn{1}{c}{nn} \\
+        \cmidrule{2-7}
+        & \multicolumn{2}{c}{$1/2^+$} & \multicolumn{2}{c}{$1/2^-$} & \multicolumn{2}{c}{$3/2^-$} \\
+        \cmidrule(l{1em}r{1em}){2-3} \cmidrule(l{1em}r{1em}){4-5}  \cmidrule(l{1em}r{1em}){6-7}
+          & $A_1$ & $A_2$ & $A_1$ & $A_2$     & $A_1$ & $A_2$ & $A$ \\
+        \midrule
+        Fit 09 & 0 & 0 & -18.3 & -617.6 & 11.2 & 24.0 & 0 \\
+        Fit 16 & -18.1 & 0 & -18.2 & -306.4 & 9.9 & 154.9 & 12.5 \\
+        \bottomrule
+        \bottomrule
+    \end{tabularx}
+    }
+\end{table}
+
+
+\section{Results}
+The experimental TOF spectrum acquired with TOFOR for the JET discharges is shown as the black points in figure \ref{fig:tof_spectra}. The 14 MeV DT neutron peak is visible in panel (a) around 27 ns with an applied fit (blue line) and a component originating from neutrons scattering on the JET machine into the TOFOR sightline (black dashed line). Neutrons from the TT reaction are expected in the broad region above 30 ns indicated by the arrow; the region has been expanded in panels (b) and (c). The neutron energy distributions from fit 09 and fit 16 are folded with the TOFOR detector response function, yielding the modeled TT TOF spectrum shown in panels (b) and (c) as the orange wide dashed line. The partial wave components used in the total TT TOF spectrum are included in the panels with the same line styles as in figure \ref{fig:energy_spectra}. The total modeled TOF spectra in panels (b) and (c), shown as the red lines, consist of the different partial wave contributions as well as the DT and scatter component in panel (a).
+
+\begin{figure}%
+    \centering
+    \subfloat{{\includegraphics[scale=0.45]{figures/tof_spectra_0.pdf} }}%
+    \subfloat{{\includegraphics[scale=0.45]{figures/tof_spectra_1.pdf} }}%
+    \caption{Neutron time-of-flight spectrum measured by TOFOR (black points) with (a) the DT (blue line) and scatter component (black dash-dotted line) applied. The TOF region of interest for T + T neutrons is indicated in the figure and has been expanded in (b) where fit 09 is applied and (c) where fit 16 is applied. The details of the applied components are described in the text.}%
+    \label{fig:tof_spectra}%
+\end{figure}
+
+\section{Conclusions and discussion}
+Two models of the TT neutron emission energy spectrum, fit 09 and fit 16, used in \cite{brune2015r} to fit experimental neutron spectra from NIF, are applied to TOF data acquired using the neutron TOF spectrometer TOFOR at JET. We show that fit 16 adequately describes our data without any modifications. It should be noted that we have not attempted to find the optimal feeding factor values to determine the shape of the TT neutron spectrum which best describes our data. No fitting is performed in panels (b) and (c) of figure \ref{fig:tof_spectra} besides a vertical scaling of the total TT spectra. The prominent peak from the intermediate reaction involving the $^5$He ground state is well described by the $3/2^-$ n$\alpha$ component in both panels (b) and (c), whereas the low energy (high TOF) part of the experimental spectrum requires the inclusion of the dineutron emission component. The interference component has a significant impact on the modeled spectrum.
+
+A possible energy dependence of the spectral shape is reported in \cite{johnson2018experimental} where the relative intensity of the $3/2^-$ ground state $^5$He component is observed to increase with CM energy. Investigations of the energy dependence using data from JET will be the subject of future work as well as a detailed fit of the feeding factors to TOFOR data.
+
+\section*{Acknowledgement}
+This work has been carried out within the framework of the EUROfusion Consortium, funded by the European Union via the Euratom Research and Training Programme (Grant Agreement No 101052200 - EUROfusion). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the European Commission can be held responsible for them.
+
+
+\bibliographystyle{elsarticle-num}
+\bibliography{bibliography.bib}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample.tex'.

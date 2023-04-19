@@ -1,0 +1,52 @@
+%% File 'sample.tex'
+%% 
+%% Copyright (C) 2003 by Maarten Sneep <sneep@nat.vu.nl>
+%% Modified 2004 by B.Ph. van Milligen <boudewijn.vanmilligen@ciemat.es>
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.2 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%    http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of LaTeX version
+%% 1999/12/01 or later.
+%% 
+\documentclass{epsconf}
+\usepackage{graphicx}
+%\usepackage{epsfig} % use this package to include EPS format figures
+\usepackage{wrapfig}
+\usepackage{amsmath}
+
+\def\TT{$\text{T} + \text{T} \rightarrow {^4\text{He}} + 2\text{n}$}
+\def\TTc{T(T,2n)$^4$He}
+\def\TTres{$\text{T} + \text{T} \rightarrow {^5\text{He}} + \text{n}$}
+\def\TTresc{T(T,n)$^5$He}
+\def\DT{$\text{D} + \text{T} \rightarrow {^4\text{He}} + \text{n}$}
+\def\DTc{D(T,n)$^4$He}
+\def\FuelRatio{$n_\text{T}/\left(n_\text{T} + n_\text{D}\right)$}
+
+
+\title{Observations of the T(T,n)$^5$He resonance reaction in NBI heated fusion plasmas}
+\author{B. Eriksson\textsuperscript{1}, G. Ericsson\textsuperscript{1}, J. Eriksson\textsuperscript{1}, A. Hjalmarsson\textsuperscript{1}, S. Conroy\textsuperscript{1},\\C. Brune\textsuperscript{2}, M. G. Johnson\textsuperscript{3}, JET contributors\textsuperscript{4}}
+
+\institute{\textsuperscript{1}Department of Physics and Astronomy, Uppsala University, Uppsala, Sweden\\
+\textsuperscript{2}Department of Physics and Astronomy, Ohio University, Athens, Ohio 45701, USA\\
+\textsuperscript{3}Plasma Science and Fusion Center, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\\
+\textsuperscript{4}See the author list of ‘Overview of JET results for optimising ITER operation’ by J. Mailloux et al. 2022 Nucl. Fusion 62 042026
+}
+
+\begin{document}
+\maketitle
+
+The Joint European Torus (JET) has recently performed experiments with fusion plasmas consisting of a majority of tritium (T) with trace amounts of deuterium (D), heated using neutral beam injection (NBI) with T ions. The dominating reactions for such fusion plasmas with high tritium fuel density ratios, \FuelRatio \ > 0.9, are the DT reaction, \DTc, which produces 14 MeV neutrons, and the TT reaction, \TTc, which due to the 3-body end state produces neutrons with a continuum of energies with an upper limit given by the reaction kinematics. The TT reaction has been observed to sometimes go via an intermediate resonant state, \TTresc, which promptly decays via neutron emission $^5\text{He} \rightarrow {^4\text{He}} + \text{n}$. There is currently limited information on the branching ratio for the three-body reaction and the intermediate resonant reaction, with a possible energy dependence observed in previous publications. We have made neutron time-of-flight (TOF) spectrometry measurements of the DT and TT reactions for several T-dominated plasmas at JET. Since the neutrons produced in \TTresc \ have a distinct energy given by the two-body kinematics of the reaction, it is possible to discern them in the neutron TOF spectrum as a peak. By modeling the neutron emission energy spectra for the various reactions using the R-matrix formalism outlined in \cite{brune2015r} and fitting the models to our TOF data we determine the shapes and relative intensities of the neutron energy distributions which best describe our observations. Finally, we estimate the branching ratio for the three-body reaction and the intermediate resonant reaction and compare it to previous results.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{bibliography.bib}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample.tex'.

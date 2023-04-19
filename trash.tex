@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tabularx,booktabs}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{document}
+
+\begin{minipage}{0.75\linewidth}
+\begin{tabularx}{\textwidth}{c *{6}{Y}}
+\toprule
+Foo bar
+ & \multicolumn{3}{c}{Fantastical aardvarks}  
+ & \multicolumn{3}{c}{Spelunking elephants}\\
+\cmidrule(lr){2-4} \cmidrule(l){5-7}
+  & A & B & C & A & B & C\\
+\midrule
+ 5  & 87 &  5 &  2 & 82 & 18 & 48\\
+ 6  &  5 & 43 &  4 &  7 & 47 &  4\\
+ 7  &  7 & 18 & 63 &  2 &  9 & 99\\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+\end{document}
