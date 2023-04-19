@@ -1,0 +1,47 @@
+\documentclass{epsconf}
+\usepackage{graphicx}
+%\usepackage{epsfig} % use this package to include EPS format figures
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{tabularx,booktabs}
+\usepackage{comment}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{parskip}
+
+
+\title{Table}
+
+\begin{document}
+
+\begin{table}[ht]
+    \centering
+    \caption{Primary ($A_1$) and secondary ($A_2$) feeding factor values for the partial waves in fit 09 and fit 16 from [1]. For dineutron emission (nn), only the primary feeding factor was used.}
+    \label{tab:feed_factors}
+    \resizebox{0.8\columnwidth}{!}{%
+    \begin{tabularx}{0.85\textwidth}{c *{7}{Y}}
+        \toprule
+        \toprule
+        & \multicolumn{6}{c}{n$\alpha$} &  \multicolumn{1}{c}{nn} \\
+        \cmidrule{2-7}
+        & \multicolumn{2}{c}{$1/2^+$} & \multicolumn{2}{c}{$1/2^-$} & \multicolumn{2}{c}{$3/2^-$} \\
+        \cmidrule(l{1em}r{1em}){2-3} \cmidrule(l{1em}r{1em}){4-5}  \cmidrule(l{1em}r{1em}){6-7}
+          & $A_1$ & $A_2$ & $A_1$ & $A_2$     & $A_1$ & $A_2$ & $A$ \\
+        \midrule
+        Fit 09 & 0 & 0 & -18.3 & -617.6 & 11.2 & 24.0 & 0 \\
+        Fit 16 & -18.1 & 0 & -18.2 & -306.4 & 9.9 & 154.9 & 12.5 \\
+        \bottomrule
+        \bottomrule
+    \end{tabularx}
+    }
+\end{table}
+\vspace{2cm}
+[1] C. Brune, J. Caggiano, D. Sayre, A. Bacher, G. Hale, M. Paris, R-matrix description of
+particle energy spectra produced by low-energy 3H + 3H reactions, Physical Review C
+92 (1) (2015) 014003.
+
+\end{document}
+\endinput
+%%
+%% End of file `sample.tex'.
