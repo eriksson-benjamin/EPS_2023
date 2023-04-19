@@ -21,6 +21,7 @@
 \usepackage{subfig}
 \usepackage{booktabs}
 \usepackage{tabularx,booktabs}
+\usepackage{comment}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 
@@ -65,6 +66,7 @@ The R-matrix model\cite{brune2015r} used to describe the neutron emission compon
 
 \section{Methods}
 Measurements have been performed, using the neutron TOF spectrometer TOFOR\cite{johnson20082, eriksson2023tofu}, of 91 experimental discharges at JET with high fuel ion ratio plasmas, \FuelRatio \ > 0.95, heated with T neutral beam injection (NBI). The TOFOR data for the experimental discharges is summed to ensure that sufficient counts are gathered to discern the spectral features of interest in the neutron emission energy spectrum. The data is treated using the methods outlined in \cite{eriksson2023tofu}, and includes, e.g., employing kinematic cuts for background discrimination. Two models used in \cite{brune2015r} to fit data from the National Ignition Facility (NIF) are considered, denoted fit 09 and fit 16, with the feeding factor values shown in table \ref{tab:feed_factors}. For fit 09 the $1/2^+$ n$\alpha$ and dineutron emission components are disabled. For fit 16 all components are included, except the secondary feeding factor for the $1/2^+$ partial wave.
+\begin{comment}
 \begin{table}
     \centering
     \caption{Primary ($A_1$) and secondary ($A_2$) feeding factor values for the partial waves in fit 09 and fit 16 from \cite{brune2015r}. For dineutron emission (nn), only the primary feeding factor was used.}
@@ -86,7 +88,7 @@ Measurements have been performed, using the neutron TOF spectrometer TOFOR\cite{
     \end{tabularx}
     }
 \end{table}
-
+\end{comment}
 
 \section{Results}
 The experimental TOF spectrum acquired with TOFOR for the JET discharges is shown as the black points in figure \ref{fig:tof_spectra}. The 14 MeV DT neutron peak is visible in panel (a) around 27 ns with an applied fit (blue line) and a component originating from neutrons scattering on the JET machine into the TOFOR sightline (black dashed line). Neutrons from the TT reaction are expected in the broad region above 30 ns indicated by the arrow; the region has been expanded in panels (b) and (c). The neutron energy distributions from fit 09 and fit 16 are folded with the TOFOR detector response function, yielding the modeled TT TOF spectrum shown in panels (b) and (c) as the orange wide dashed line. The partial wave components used in the total TT TOF spectrum are included in the panels with the same line styles as in figure \ref{fig:energy_spectra}. The total modeled TOF spectra in panels (b) and (c), shown as the red lines, consist of the different partial wave contributions as well as the DT and scatter component in panel (a).
